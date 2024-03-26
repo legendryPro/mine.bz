@@ -1,0 +1,14 @@
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color for better visibility */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222; /* Darker header background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
