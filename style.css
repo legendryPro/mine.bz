@@ -1,4 +1,6 @@
-/* Base styles for all devices */
+/* style.css */
+
+/* Common styles */
 body {
   background-color: #000;
   color: #fff;
@@ -7,119 +9,77 @@ body {
   padding: 0;
 }
 
-h1, h2, h3 {
-  margin: 0;
+header {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav {
-  list-style: none;
-  padding: 0;
+h1 {
   margin: 0;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
+  margin: 0 10px;
 }
 
-nav a:hover {
-  background-color: #444;
+main {
+  padding: 50px;
+  text-align: center;
 }
 
 .btn {
-  background-color: #4CAF50; /* Green color */
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #00ff00;
+  color: #000;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #00cc00;
+}
+
+.plans {
+  padding: 50px;
+  text-align: center;
+}
+
+.plan {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
   background-color: #222;
-  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Styles for desktops and large screens (min-width: 768px) */
-@media (min-width: 768px) {
-  header {
-    background-color: #222;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
   main {
-    text-align: center;
-    padding: 50px;
-  }
-
-  .plans {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-
-  .plan {
-    background-color: #333;
-    color: #fff;
     padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-}
-
-/* Styles for tablets and medium screens (max-width: 767px and min-width: 480px) */
-@media (max-width: 767px) and (min-width: 480px) {
-  header {
-    display: block; /* Change header to block layout for tablets */
-    text-align: center;
-  }
-
-  nav {
-    text-align: center; /* Center navigation on tablets */
-  }
-
-  main,
-  .plans {
-    padding: 20px;
-  }
-
-  .plans {
-    flex-wrap: wrap; /* Wrap plans on smaller screens */
   }
 
   .plan {
     margin: 10px;
-    width: calc(50% - 20px); /* Adjust width for two columns on tablets */
+  }
+
+  footer {
+    padding: 10px;
   }
 }
 
-/* Styles for mobile phones and small screens (max-width: 479px) */
-@media (max-width: 479px) {
-  h1 {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
-  }
 
-  .btn {
-    font-size: 14px; /* Adjust button font size */
-  }
 
-  .plan {
-    width: 100%; /* Make plans full width on mobile */
-  }
-}
 
 
